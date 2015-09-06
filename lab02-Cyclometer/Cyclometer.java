@@ -20,7 +20,8 @@ public static void main(String[] args) {
   	int inchesPerFoot=12;   // int variable constant ratio value inches:foot
   	int secondsPerMinute=60;  // int variable constant ratio value seconds:minute
 	double distanceTrip1, distanceTrip2, totalDistance;  // define outputs as doubles.
-       // prints out data stored in the variables along with text to form a sentence.
+       // prints out data stored in the variables along with text to form a sentence
+       //stating trip time total (minutes) and trip count total (counts).
        System.out.println("Trip 1 took "+
        	     (secsTrip1/secondsPerMinute)+" minutes and had "+
        	      countsTrip1+" counts.");
