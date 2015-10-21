@@ -35,24 +35,22 @@ public class StringAnalysis {
     public static boolean main2( String b, int c) {
         //beginning of second method
         boolean t = true;
-        Scanner myScanner = new Scanner(System.in);
-        // create the instance for using the scanner class in the main method
         int length = b.length();
         //determine the length of the string
         int counter = 0;
-        while (counter < c && counter < length) {
+        while (counter < c) {
+            if (counter == length) {
+                break;
+            }
             if (Character.isLetter(b.charAt(counter))) {
                 counter++;
             }
             else {
                 t = false;
+                break;
             }
         }
         //use while loop with a nested if statement to check the string
-        if (counter==c) {
-            t = true;
-        }
-        //use if statement to assign t the value true if the string only contains letters
         return t;
         //return boolean value stored in t
     }
@@ -81,6 +79,7 @@ public class StringAnalysis {
         else {
             System.out.println("Not all of the characters in the string are letters.");
         }
+        //print out the output depending on whether or not all letters were entered
         System.out.print("Enter the number of characters you want to check: ");
         // prompt the user to enter the number of characters to be checked
         int d;
@@ -106,33 +105,8 @@ public class StringAnalysis {
             System.out.println("All of the characters in this segment are letters.");
         }
         else {
-            System.out.println("Not all of the characters in this segment are letters.");
+            System.out.println("Not all of the charaacters in this segment are letters.");
         }
         //print out the output depending on whether or not all letters were entered
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
     }
 }
