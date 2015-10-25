@@ -144,7 +144,7 @@ public class Area {
             else {
                 shape = myScanner.nextLine();
                 if (!shape.equals("rectangle") && !shape.equals("circle") && !shape.equals("triangle")) {
-                    System.out.print(" You must choose among a rectangle, a square, and a triangle. Try again: ");
+                    System.out.print(" You must choose among a rectangle, a circle, and a triangle. Try again: ");
                 }
                 else {
                     break;                    
@@ -159,7 +159,7 @@ public class Area {
         //print out area of rectangle if shape is equal to rectangle
         else if (shape.equals("circle")) {
         double area = inputCheck(shape);
-        System.out.println("The area of the square is "+area+".");
+        System.out.println("The area of the circle is "+area+".");
         }
         //print out the area of a circle if shape is equal to circle
         else if (shape.equals("triangle")) {
